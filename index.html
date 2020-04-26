@@ -191,22 +191,6 @@
             circle.setAttribute('r', 10)
             drawing.append(circle)
         }
-        function toggle_visibility(){
-            this.setAttribute("visibility", "hidden")
-            this.classList.add("hidden")
-            document.getElementsByClassName("reset")[0].classList.remove("hidden")
-            
-        }
-        function reset_hidden(){
-            console.log(drawing.getElementsByClassName("hidden"))
-            while( drawing.getElementsByClassName("hidden")[0]){
-                elem = drawing.getElementsByClassName("hidden")[0]
-                console.log(elem)
-                elem.setAttribute("visibility", "visible")
-                elem.classList.remove("hidden")
-            }
-            document.getElementsByClassName("reset")[0].classList.add('hidden')
-        }
 
         function draw_cave(){
             var current_group = 'begin'
