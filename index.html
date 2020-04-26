@@ -21,7 +21,7 @@
   </head>
   <body>
     <svg id="svg">
-        <g id="drawing" transform="scale(0.5)">
+        <g id="drawing" transform="scale(0.3)">
 
         </g>
         <g id="climb">
@@ -205,7 +205,7 @@
             }
             
             var overlap = 5
-            var position = {x: overlap, y: 500}
+            var position = {x: overlap, y: 100}
             
             while(current_group != 'end' && pieces[current_group].length >= 0){
                 if(pieces[current_group].length === 0){
@@ -230,7 +230,7 @@
                 }
                 
                 if (current_group ==="begin" && Object.keys(random_data.interfaces)[0] === "3"){
-                    position.x = 2000
+                    position.x = 1600
                 }else{
                     if (current_interface === "1"){
                         position.x = position.x - random_data.width * random_data.scale + overlap
